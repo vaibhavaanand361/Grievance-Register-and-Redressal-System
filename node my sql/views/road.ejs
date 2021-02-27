@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<title>Welcome to CPGRAMS</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="main">
+		<!--************** Top Bar Starts *************-->
+		<div class="topbar">
+			<div class="container-fluid clearfix">
+				<div class="tophead_left">
+					<ul>
+						<li class="gov">
+							<span><h4><b>Mini-DBMS Project</b></h4></span>
+						</li>
+						<li class="ministry">
+							<span><h5><b>System of Personnel & Public Grievances</b></h5></span>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<!--*************** Top Bar Ends ***************-->
+
+		<!--*************** Logo Bar Starts ***************-->
+		
+		<div class="head">
+			<div class="container-fluid clearfix">
+				<div class="d-flex justify-content-between">
+					<div class="logo">
+						<a href=""><img src="/logo.png"alt="logo"></a>
+					</div>
+					<div class="title-main">
+						<h2>CPGRAMS</h2>
+						<span class="hidden-sm-down">Centralized Public Grievance Register And Monitoring System</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--*************** Logo Bar Ends ***************-->
+		
+		<!--*************** Nav Bar Starts ***************-->
+		<div class="main-navbar bg-dark">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-md navbar-dark d-flex justify-content-between">
+					<button type="submit" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggle-icon">
+						</span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="/auth/loan"><img src="/ico_view.png" alt=""><button type="submit">View Status</button><span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"data-toggle="dropdown"aria-expanded="false">
+									<img src="/ico_grievance.png" alt=""><button type="submit">Grievance</button>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+									<a class="dropdown-item"href="/auth/organisation"><button type="submit">Lodge Personnel Grievance</button></a>
+									<a class="dropdown-item" href="/auth/organisation"><button type="submit">Lodge Public Grievance</button></a>
+									 <a class="dropdown-item" href="/auth/loan">View Status</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"href="/auth/notice"><i class="fa fa-bell" aria-hidden="true"></i><button type="submit">Notices</button><span class="sr-only">(current)</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--************ Nav Bar Ends ***********-->
+
+		<!--************ Dashboard Starts ***********-->
+		<div class="container-fluid pl-1 flex-grow-1">
+			<div class="main-content innerPage h-100">
+			<div class="container-fluid h-100">
+				<div class="row h-100">
+					<nav class="col-auto left_panel">
+						<div class="sidebar-sticky">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link active"href="/auth/returndashboard">
+										<i class="fa fa-dashboard"></i><button type="submit" style="color: black">Dashboard</button><span class="sr-only">(current)</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link"href="/auth/organisation">
+										<i class="fa fa-plus-square"></i><button type="submit">Lodge Public Grievance</button>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link"href="/auth/updateprofile">
+										<i class="fa fa-edit"></i><button type="submit">Edit Profile</button>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link"href="">
+										<i class="fa fa-lock"></i><form action="/auth/send" method="POST"><button>Change Password</button></form>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link"href="/auth/loan">
+										<i class="fa fa-inr"></i><button type="submit">Loan Status</button>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-warning" href=""><form action=" /auth/logout" method="POST"><i class="fa fa-power-off"><button><strong></i>Sign out</button></strong>
+									</form>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<!--*********** Dashboard Ends ***************-->
+
+					<!--Grievance Starts-->
+
+					<!--Grievance Ends-->
+					<main role="main" class="col">
+						
+					
+					<div class="card card-info card-mim-height">
+				    <div class="card-header with-border" style="background-color: #48a3b8">
+				        <div class="row">
+				            <div class="col">
+				                <h4 class="card-title">
+				                    Grievance registration form
+				                </h4>
+				            </div>
+				            <div class="col text-right">
+				                <a class="btn btn-primary btn-social" href="/auth/organisation">
+				                    <i class="fa fa-arrow-circle-left"></i>Return to desk
+				                </a>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="card-body">
+			        <div class="row border-bottom border-primary">
+			            <div class="col-md-6">
+			                
+			            </div>
+			            <div class="col-md-6">
+			                <span class="pull-right text-primary"> Fields marked with <b class="text-danger">*</b> are mandatory. </span>
+			            </div>
+			        </div>
+			        <form action="/auth/road" autocomplete="off" id="NewGrievanceV7" method="post" enctype="multipart/form-data">
+			        	<div class="form-horizontal">
+			                <div class="form-group">
+			                    <div class="row">
+			                        <label class="col-4 text-right required" for="Organisation"><b>Ministry / Department</b><b class="text-danger">*</b></label>
+			                        <div class="col-8">
+			                            Road Transport and Highways
+			                            <input id="Organisation" name="Organisation" type="hidden" value="DOSEL" />
+			                            <span class="field-validation-valid text-danger" data-valmsg-for="Organisation" data-valmsg-replace="true"></span>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                    <div class="row">
+			                        <label class="col-md-4 text-right required" for="Category"><b>Select main category</b><b class="text-danger">*</b></label>
+			                        <div class="col-md-6">
+			                            <select autocomplete="off" class="form-control" id="Category_2" name="Category2"><option value="">Please select main category</option>
+											<option value="617">Employee Related/Services Related</option>
+											<option value="619">Construction &amp; Maintenance of National Highways</option>
+											<option value="620">Land Acquisition</option>
+											<option value="621">Road Transport Related</option>
+										</select>
+                            			<span class="field-validation-valid text-danger"></span>
+                        			</div>
+                    			</div>
+                			</div>
+                			<div class="form-group">
+			                    <div class="row">
+			                        <label class="col-md-4 text-right required" for="Category"><b>Name of State and National Highway No.</b><b class="text-danger">*</b></label>
+			                        <div class="col-md-6">
+			                            <input type="text" name="StateName" autocomplete="off" id="StateName" class="form-control text-box single-line">
+                            			<span class="field-validation-valid text-danger"></span>
+                        			</div>
+                    			</div>
+                			</div>
+                			<div class="form-group">
+                				<br>
+                				<div class="row">
+                					<label class="col-md-4 text-right required" for="Remarks"><b>Text of grievance(Remarks)</b><b class="text-danger">*</b>
+                					</label>
+                					<div class="col-md-12">
+                						<span class="text-info">
+                							"Maximum 1000 characters are allowed in description.
+                						</span>
+                						<br>
+                						<span class="text-dark">
+                						<strong>Only special characters  , . - _ ( ) / : &amp; @  # $ % &amp; * ? + = ! ' "  are allowed in grievance description.</strong>
+                						</span>
+                						<textarea autocomplete="off" class="form-control" cols="50" id="Remarks" maxlength="1000" name="Remarks" placeholder="Please Enter Text of Grievance (Remarks)" required="required" rows="5"></textarea>
+                					</div>
+                					
+                				</div>
+                				
+                			</div>
+                			<div class="form-group">
+                				<div class="row">
+                					<div class="col-md-4 text-right">
+                						<strong>Attach relevant/supporting documents</strong><b class="text-danger">*</b>
+                					</label>
+                						<br>
+                						<span class="text-info">Only PDF file upto 4MB is allowed.
+                						</span>
+                					</div>
+                					<div class="col-md-4"><input type="file" required="required" name="image" id="fileUpload">
+                					</div>
+                				</div>
+                			</div>
+                			<div class="form-group">
+        						<div class="offset-4 col-md-6">
+            						<button type="submit" id="btnSubmit" class="btn btn-social btn-primary">
+                						<i class="fa fa-arrow-circle-right"></i> Submit
+            						</button>
+        						</div>
+    						</div>
+            			</div>
+</form>
+<% if(message){%>
+	<h4 class="alert alert-danger mt-4"><%=message%></h4>
+						 <%}%>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+<!--************ Footer Starts ***********-->
+    <footer>
+      <div class="footer-top">
+            <div class="copyright">
+                  <span>This site is designed, developed & hosted by Students of Information Technology Department owned by School of Engineering,CUSAT</span>
+            </div>
+        </div>
+    </footer>
+    <!--************ Footer Ends ***********-->
+  </div>
+</body>
+</html>

@@ -1,0 +1,418 @@
+     /*    Grievance Cell Dashboard CSS begins     */
+     .topbar {
+        background: #d3e7ff;
+        background: -moz-linear-gradient(top, #d3e7ff 0%, #bbd8fa 49%, #bbd8fa 51%, #207cca 51%, #bbd8fa 51%, #a4caf5 100%);
+        background: -webkit-linear-gradient(top, #d3e7ff 0%,#bbd8fa 49%,#bbd8fa 51%,#207cca 51%,#bbd8fa 51%,#a4caf5 100%); 
+        background: linear-gradient(to bottom, #d3e7ff 0%,#bbd8fa 49%,#bbd8fa 51%,#207cca 51%,#bbd8fa 51%,#a4caf5 100%);
+        display: block;
+        border-bottom: 1px solid #ebebeb;
+        font-family: Verdana;
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    .top_row {
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    
+    .tophead_left {
+        float: left;
+        padding-left: 15px;
+    }
+    .univ_logo img{
+        height:100px;
+        width: 100px;
+    }
+    
+    .tophead_right {
+        width: auto;
+        float: right;
+        margin: 0px;
+        padding: 0px;
+    }
+    .loginlinks {
+        border-right: 1px solid #4b93e2;
+        float: left;
+        color: #000;
+        font-family: Verdana;
+        font-size: 12px;
+        line-height: 29px;
+        padding: 14px 14px;
+    }
+    .loginlinks:hover{
+        text-decoration: none;
+    }
+    .tophead_left ul{
+        list-style: none;
+    }
+    .faq{
+        border-right: none;
+    }
+    .head {
+        background: #f3f3f3;
+        padding: 5px;
+    }
+    .logo {
+        margin-left: 20px;
+    }
+    .title-main {
+        color: #156eb7;
+        font-weight: bold;
+        padding-top: 12px;
+        text-align: center;
+    }
+    .title-main h2 {
+            text-align: center;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 0px 3px 3px #ababab;
+            padding-right: 285px;
+        }
+    .title-main span {
+            font-size: 18px;
+            padding-right: 285px;
+        }
+    .main-navbar .navbar {
+        padding: 0;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffffff !important;
+        font-size: 13px;
+    }
+    .main-navbar img {
+        padding-right: 3px;
+        position: relative;
+        bottom: 2px;
+    }
+    .main {
+        height: 100vh;
+        display: flex;
+        -moz-display: flex;
+        -webkit-display: flex;
+        flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .main-content {
+        flex-grow: 1;
+        -moz-flex-grow: 1;
+        -webkit-flex-grow: 1;
+        padding-top: 10px;
+        background-size: cover;
+        background-color: #d3e7ff;
+        background-color: -moz-linear-gradient(top, #4e7eb0 0%, #78a1cc 50%, #78a1cc 51%, #a1c3e6 100%); 
+        background-color: -webkit-linear-gradient(top, #4e7eb0 0%,#78a1cc 50%,#78a1cc 51%,#a1c3e6 100%); 
+        background-color: linear-gradient(to bottom, #4e7eb0 0%,#78a1cc 50%,#78a1cc 51%,#a1c3e6 100%); 
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 4%;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+    .copyright {
+        clear: both;
+        text-align: center;
+        background: #d8d8d8;
+        border-top: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    .footer1{
+        margin-top: 445px;
+    }
+        /*    Grievance Cell Dashboard CSS ends     */
+    
+        /*    Contact Us CSS begins     */
+    .table > tbody > tr, .table > thead > tr {
+        display: table-row;
+    }
+        /*    Contact Us CSS ends     */
+    
+    
+         /*    Login CSS begins     */
+    .loginMain {
+        padding: 15px;
+    }
+    .user {
+        background: #373737;
+        padding: 5px !important;
+    }
+    .user h2 {
+            font-size: 15px;
+        }
+    .officer {
+        background: #efa325;
+    }
+    .btn-link {
+        color: #000;
+    }
+    .custom-card {
+        background: none;
+        border: none;
+    }
+    
+    .custom-card, .custom-card-header {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .custom-card-header {
+        box-shadow: 0px 2px 7px 0px #2d2d2d;
+        border: none;
+    }
+    
+    .custom-card-body label {
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    .custom-card-header .btn-link {
+        font-size: 15px;
+        padding: 0;
+        font-weight: 600;
+    }
+    
+    .custom-card-body .form-control {
+        border-radius: 0;
+        padding: 0px 10px;
+        background: #e9e4e4;
+    }
+    
+    .custom-card-body {
+        background-image: url('../Images/bg_loginbox.png');
+        background-color: #004a98;
+        box-shadow: 0 1px 4px 0px #383838;
+        background-size: cover;
+        border: 1px solid #fff;
+        padding: 15px;
+    }
+    .loginInput input {
+        margin: 0;
+        border-right: none;
+    }
+    .officerImg {
+        background: #373737;
+        padding: 0 20px 0 30px;
+    }
+    .officerImg img {
+            width: 40px;
+        }
+    
+    .officer .flex-grow-1 {
+        width: 64%;
+    }
+    .custom-card .form-inline img {
+        vertical-align: text-bottom;
+    }
+    .input-group-addon {
+        padding: 5px;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1;
+        color: #555;
+        text-align: center;
+        background-color: #e9e4e4;
+        border: none;
+        border-bottom: #bbbbbb solid 1px;
+        border-right: #bbbbbb solid 1px;
+        border-top: #e6e6e6 solid 1px;
+        border-radius: 0;
+    }
+    .loginHelp {
+        font-size: 13px;
+    }
+          /*    Login CSS ends     */
+    i {
+        margin-right: 10px;
+    }
+    .col-12{
+        font-weight: bold;
+    }
+    .card-title {
+        font-weight: 400;
+        margin: 0;
+        color: #fff;
+    }
+    .footer{
+        margin-top: -200px;
+    }
+    #none{
+        text-decoration: none;
+    }
+    /*left panel*/
+    .left_panel {
+        background: -moz-linear-gradient(270deg, #084c94 0%, #2c79ca 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #084c94), color-stop(100%, #2c79ca)); /* safari4+,chrome */
+        background: -webkit-linear-gradient(270deg, #084c94 0%, #2c79ca 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(270deg, #084c94 0%, #2c79ca 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(270deg, #084c94 0%, #2c79ca 100%); /* ie10+ */
+        background: linear-gradient(180deg, #084c94 0%, #2c79ca 100%); /* w3c */
+        padding: 0;
+        border-radius: 5px;
+    }
+        .left_panel .nav-item {
+            border-top: 1px solid #fff;
+        }
+        .left_panel a {
+            color: #fff;
+            padding-left: 30px;
+            font-size: 15px;
+        }
+    .left_panel a:hover {
+        color: #fff;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+        .left_panel .nav-item .nav-link.active {
+            background: #e2e0e0;
+            color: #000;
+            width: 100%;
+        } 
+    /*------------left panel----------------*/
+    /*-----------------------Right-----------------*/
+    #tableBox {
+        display: none;
+    }
+    .innerPage {
+        background: none;
+        padding-top: 3px;
+    }
+    .grievCont {
+        background: #f0f0f0 !important;
+        border: 0;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        border-radius: 6px;
+        width: 100%;
+        box-shadow: 1px 2px 5px 1px #c5c5c5;
+    }
+    .boxGriev {
+        margin: 0 15px;
+        padding: 0;
+        position: relative;
+    }
+    .boxIcon {
+        padding: 10px;
+        padding: 15px;
+        margin-top: -20px;
+        margin-right: 15px;
+    }
+    .contentBox {
+        padding: 0 20px;
+    }
+    .griev1 {
+        background: -moz-linear-gradient(270deg, #c7413c 0%, #df4943 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c7413c), color-stop(100%, #df4943)); /* safari4+,chrome */
+        background: -webkit-linear-gradient(270deg, #c7413c 0%, #df4943 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(270deg, #c7413c 0%, #df4943 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(270deg, #c7413c 0%, #df4943 100%); /* ie10+ */
+        background: linear-gradient(180deg, #c7413c 0%, #df4943 100%); /* w3c */
+    }
+    .griev2 {
+        background: -moz-linear-gradient(270deg, #d4963e 0%, #e4a143 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d4963e), color-stop(100%, #e4a143)); /* safari4+,chrome */
+        background: -webkit-linear-gradient(270deg, #d4963e 0%, #e4a143 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(270deg, #d4963e 0%, #e4a143 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(270deg, #d4963e 0%, #e4a143 100%); /* ie10+ */
+        background: linear-gradient(180deg, #d4963e 0%, #e4a143 100%); /* w3c */
+    }
+    .griev3 {
+        background: -moz-linear-gradient(270deg, #1ea567 0%, #21b16f 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1ea567), color-stop(100%, #21b16f)); /* safari4+,chrome */
+        background: -webkit-linear-gradient(270deg, #1ea567 0%, #21b16f 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(270deg, #1ea567 0%, #21b16f 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(270deg, #1ea567 0%, #21b16f 100%); /* ie10+ */
+        background: linear-gradient(180deg, #1ea567 0%, #21b16f 100%); /* w3c */
+    }
+    .box-title {
+        padding-top: 20px;
+        text-align: center;
+        width: 100%;
+        color: #5d5d5d;
+    }
+    .box-title h3 {
+            font-size: 56px;
+        }
+    .stats {
+        text-align: center;
+    }
+    .stats span {
+        font-weight: 600;
+        color: #373737;
+    }
+    .table > tbody > tr, .table > thead > tr {
+        display: table-row;
+    }
+    .card {
+        padding: 10px;
+        width: 100%;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+    /*---------------------Right-----------------*/
+    .orgTitle {
+        background: #0b59ab;
+        background: -moz-linear-gradient(top, #0b59ab 0%, #1768bd 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, #0b59ab), color-stop(100%, #1768bd));
+        background: -webkit-linear-gradient(top, #0b59ab 0%, #1768bd 100%);
+        background: -o-linear-gradient(top, #0b59ab 0%, #1768bd 100%);
+        background: -ms-linear-gradient(top, #0b59ab 0%, #1768bd 100%);
+        background: linear-gradient(to bottom, #0b59ab 0%, #1768bd 100%);
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+        position: relative;
+        top: 15px;
+    }
+    .lodgeMain {
+        padding: 0 35px;
+    }
+    .lodgeBox {
+        min-height: 275px;
+        margin-bottom: 15px;
+    }
+    .lodgeGriev {
+        margin: 15px;
+    }
+    .nav button{
+        color: white;
+        padding: 0;
+        border: none;
+        background: none;
+        outline: none !important; 
+    }
+    .top_row button{
+        padding: 0;
+        border: none;
+        background: none;
+        outline: none !important; 
+    }
+    .navbar-nav button{
+        color: white;
+        padding: 0;
+        border: none;
+        background: none;
+        outline: none !important; 
+    }
+    .dropdown-menu button{
+        color: black;
+        padding: 0;
+        border: none;
+        background: none;
+        outline: none !important; 
+    }
+    .text-right button{
+        color: white;
+        padding: 0;
+        border: none;
+        background: none;
+        outline: none !important; 
+    }

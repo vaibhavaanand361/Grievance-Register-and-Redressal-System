@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Officer Login</title>
+	<title>Welcome to CPGRAMS</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="main">
+		<!--************** Top Bar Starts *************-->
+		<div class="topbar">
+			<div class="container-fluid clearfix">
+				<div class="tophead_left">
+					<ul>
+						<li class="gov">
+							<span><h4><b>Mini-DBMS Project</b></h4></span>
+						</li>
+						<li class="ministry">
+							<span><h5><b>System of Personnel & Public Grievances</b></h5></span>
+						</li>
+					</ul>
+				</div>
+				<div class="tophead_right">
+					<ul class="top_row flex-row">
+						<li>
+							<a href="grievance_dashboard.html" class="loginlinks">
+								<img src="/ico_home.png" alt="Home Image">
+								<span class="hidden-sm-down"><button type="submit">Home</button></span>
+							</a>
+						</li>
+						<li><a href="./contactus.html" class="loginlinks"><img src="/ico_contact.png" alt="Contact Us"><span class="hidden-sm-down"><button type="submit">Contact Us</button></span>
+						</a>
+					    </li>
+					    <li>
+					    	<a href="./aboutus.html" class="loginlinks">
+					    		<img src="/ico_about.png" alt="About Us">
+					    		<span class="hidden-sm-down"><button type="submit">About Us</button></span>
+						</a>
+					    </li>
+					     <li>
+					    	<a href="./faq.html" class="loginlinks faq">
+					    		<img src="/ico_help.png" alt="FAQ/Help">
+					    		<span class="hidden-sm-down"><button type="submit">FAQ/Help</button></span>
+						    </a>
+					    </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--*************** Top Bar Ends ***************-->
+
+		<!--*************** Logo Bar Starts ***************-->
+		
+		<div class="head">
+			<div class="container-fluid clearfix">
+				<div class="d-flex justify-content-between">
+					<div class="logo">
+						<a href=""><img src="/logo.png"alt="logo"></a>
+					</div>
+					<div class="title-main">
+						<h2>CPGRAMS</h2>
+						<span class="hidden-sm-down">Centralized Public Grievance Register And Monitoring System</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--*************** Logo Bar Ends ***************-->
+		<main role="main" class="col">
+            <div class="card card-primary">
+              <div class="card-header text-center" style="background-color: #037afb">
+                    <h4 class="card-title">Officer Login</h4>
+                </div> 
+                <div class="card-body">
+                  <div class="row">
+                        <div class="col">
+                            <span class="text-primary"><strong>Enter Details</strong></span>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="col">
+                            <hr />
+                        </div>
+                  </div>
+                  <div class="form-horizontal">
+                    
+                  
+                  <div class="contact">
+                  <form method="POST" action="/auth/officerslogin">
+                   <div class="form-group">
+                                <div class="row">
+                                    <label class="col-md-4 text-right required"  name="email" for="Username"><b>Username</b></label>
+                                    <div class="col-md-6">
+                                        <input autocomplete="off" class="form-control text-box single-line"  id="OldPassword" name="email" type="text"  placeholder="Username" />
+                                        <span class="field-validation-valid text-danger"></span>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="form-group">
+                                <div class="row">
+                                    <label class="col-md-4 text-right required" name="password" for="Password"><b>Password</b></label>
+                                    <div class="col-md-6">
+                                        <input autocomplete="off" class="form-control text-box single-line"  id="Password" name="password" type="password" placeholder="Password" />
+                                        <span class="field-validation-valid text-danger"></span>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="form-group">
+                                <div class="row">
+                                    <div class="offset-md-4 col-md-6">
+                                        <button type="submit" id="btnpop" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                    </div>
+                 </form>
+
+                 {{#if message}}
+<h4 class="alert alert-danger mt-4">{{message}}</h4>
+
+{{/if}}
+            </div>
+            </div>
+                  
+                </div>
+
+              
+            </div>
+            
+    </main>
+    <footer>
+      <div class="footer-top">
+            <div class="copyright">
+                  <span>This site is designed, developed & hosted by Students of Information Technology Department owned by School of Engineering,CUSAT</span>
+            </div>
+        </div>
+    </footer>
+	</div>
+</body>
+</html>

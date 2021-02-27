@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Successful Registration</title>
+    <title>Welcome to CPGRAMS</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <!--************** Top Bar Starts *************-->
+        <div class="topbar">
+            <div class="container-fluid clearfix">
+                <div class="tophead_left">
+                    <ul>
+                        <li class="gov">
+                            <span><h4><b>Mini-DBMS Project</b></h4></span>
+                        </li>
+                        <li class="ministry">
+                            <span><h5><b>System of Personnel & Public Grievances</b></h5></span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <!--*************** Top Bar Ends ***************-->
+
+        <!--*************** Logo Bar Starts ***************-->
+        
+        <div class="head">
+            <div class="container-fluid clearfix">
+                <div class="d-flex justify-content-between">
+                    <div class="logo">
+                        <a href=""><img src="/logo.png"alt="logo"></a>
+                    </div>
+                    <div class="title-main">
+                        <h2>CPGRAMS</h2>
+                        <span class="hidden-sm-down">Centralized Public Grievance Register And Monitoring System</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*************** Logo Bar Ends ***************-->
+        
+        <!--*************** Nav Bar Starts ***************-->
+        <div class="main-navbar bg-dark">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-md navbar-dark d-flex justify-content-between">
+					<button type="submit" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggle-icon">
+						</span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="/auth/loan"><img src="/ico_view.png" alt=""><button type="submit">View Status</button><span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"data-toggle="dropdown"aria-expanded="false">
+									<img src="/ico_grievance.png" alt=""><button type="submit">Grievance</button>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+									<a class="dropdown-item"href="/auth/organisation"><button type="submit">Lodge Personnel Grievance</button></a>
+									<a class="dropdown-item" href="/auth/organisation"><button type="submit">Lodge Public Grievance</button></a>
+									 <a class="dropdown-item" href="/auth/loan">View Status</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"href="/auth/notice"><i class="fa fa-bell" aria-hidden="true"></i><button type="submit">Notices</button><span class="sr-only">(current)</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+        <!--*************** Nav Bar Ends ***************-->
+
+        <!--*************** Successful registration Starts ***************-->
+
+
+        <main role="main" class="col">
+                                        
+
+
+
+        <div class="card card-success">
+            <div class="card-body">
+
+                
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <br />
+                            <h3 class="text-center text-success">
+                                <b>
+                                    <i class="fa fa-2x fa-check-square-o"></i>
+                                    Your Application for Loan is registered successfully.
+                                    <% if(message){%>
+                                        <h4 class="alert alert-danger mt-4"><%=message%></h4>
+                                                             <%}%>
+                                </b>
+                            </h3>
+                            <h4 class="text-center text-success"><b>Registration Number :</b><%=regno%></h4>
+                            <br />
+                            <h5 class="text-center text-warning">Please note down your registration number for future references.</h5>
+                            <br />
+                            <br />
+                            <p class="text-center">
+                                            <a class="btn btn-info btn-social" href="/auth/returndashboard">
+                                                <i class="fa fa-arrow-circle-left"></i> <button type="submit" style="color: white;padding: 0;border: none;
+                                              background: none; outline: none !important; ">Back to Home</button>
+                                            </a>
+
+                            </p>
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </main>
+                             <!--*************** Successful registration Endss ***************-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+      <div class="footer-top">
+            <div class="copyright">
+                  <span>This site is designed, developed & hosted by Students of Information Technology Department owned by School of Engineering,CUSAT</span>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

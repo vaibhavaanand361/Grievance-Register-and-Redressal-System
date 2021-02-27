@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Dashboard</title>
+	<title>Welcome to CPGRAMS</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="main">
+		<!--************** Top Bar Starts *************-->
+		<div class="topbar">
+			<div class="container-fluid clearfix">
+				<div class="tophead_left">
+					<ul>
+						<li class="gov">
+							<span><h4><b>Mini-DBMS Project</b></h4></span>
+						</li>
+						<li class="ministry">
+							<span><h5><b>System of Personnel & Public Grievances</b></h5></span>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<!--*************** Top Bar Ends ***************-->
+
+		<!--*************** Logo Bar Starts ***************-->
+		
+		<div class="container-fluid pl-1 flex-grow-1">
+			<div class="main-content innerPage h-100">
+			<div class="container-fluid h-100">
+				<div class="row h-100">
+					<nav class="col-auto left_panel">
+						<div class="sidebar-sticky">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link active"href="/auth/returnoffdashboard">
+										<i class="fa fa-dashboard"></i><button type="submit" style="color: black">Public Grievances</button><span class="sr-only">(current)</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link"href="/auth/officersloandashboard">
+										<i class="fa fa-inr"></i><button type="submit">Loan Approval</button>
+									</a>
+								</li>
+								
+								<li class="nav-item">
+									<a class="nav-link text-warning" href=""><form action=" /auth/officerslogout" method="POST"><i class="fa fa-power-off"><button><strong></i>Sign out</button></strong>
+									</form>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+
+		<main role="main" class="col">
+            							<div class="card card-info">
+    							<div class="card-header" style="background-color: #48a3b8">
+        							<h4 class="card-title">List of Loans</h4>
+    							</div>
+    							<div class="card-body">
+    	
+       								<table id="TblGrievance" class="table table-striped table-bordered" style="width: 100%">
+            							<thead>
+            							<tr class="bg-secondary">
+                							<th>Sn.</th>
+                							<th>Registration Number</th>
+                							<th>Received Date</th>
+                							<th>Loan type</th>
+											<th>Status</th>
+											<th>button update</th>
+                							<th> Loan description</th>
+            							</tr>
+            							</thead>
+            							<tbody>
+											<%c=0%>
+                                            <% results1.forEach( function( items ) {  %>
+                                                
+                                                <tr>
+                                                    <td><%=++c%></td>
+                                                    <td><%=items.regno%></td>
+                                                    <td><%=items.date%></td>
+													<td><%=items.catogery%></td>
+													<td><%=items.status%></td>
+                                                    <td>
+														<form method="POST" action="/auth/updateloanstatus">
+                                                        <input type="hidden" value="<%=items.regno%>" name="regno" />
+                                                        <input type="hidden" value="loan" name="type" />
+                                                        <button type="submit" name="vote"  value="accepted" class="btn btn-success mr-2 offset-1">Accept</button>
+														<button type="submit" name="vote"  value="rejected" class="btn btn-danger offset-1">Reject</button>
+													</form>
+                                                    </td>    
+                                                
+                                                    <td><%=items.doc%></td>     
+                                                </tr>
+                                            <% }) %>
+                                    	</tbody>
+        							</table>
+        		
+    							</div>
+							</div>
+    </main>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
